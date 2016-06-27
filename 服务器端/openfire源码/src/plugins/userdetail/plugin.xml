@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+    <!-- Main plugin class -->
+    <class>org.jivesoftware.openfire.plugin.UserDetailPlugin</class>
+
+    <!-- Plugin meta-data -->
+    <name>UserDetailPlugin</name>
+    <description>UserDetailPlugin</description>
+    <author>Coselding</author>
+
+    <version>2.0</version>
+    <date>04/12/2015</date>
+    <url>http://localhost:9090/openfire_src/plugins.jsp</url>
+    <minServerVersion>3.8.2</minServerVersion>
+    <licenseType>Apache</licenseType>
+
+<!--
+    <!-- Admin console entries -->
+    <adminconsole>
+        <!-- More on this below -->
+    </adminconsole>
+    -->
+    <!--
+    <databaseKey>openfireLBS</databaseKey>
+    <databaseVersion>0</databaseVersion>
+    -->
+</plugin>

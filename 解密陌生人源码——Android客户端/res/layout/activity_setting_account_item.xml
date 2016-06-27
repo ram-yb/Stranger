@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/activity_setting_account"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="#98b692"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="65dp"
+            android:layout_weight="1" />
+
+        <com.silence.im.ui.view.RoundedImageView
+            android:id="@+id/activity_setting_account_avatar"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher"
+            app:border_color="#e6f4c1"
+            app:border_width="2dp"
+            app:corner_radius="55dp"
+            app:oval="false" />
+
+        <TextView
+            android:id="@+id/activity_setting_account_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="32dp"
+            android:layout_weight="4"
+            android:text="sadas"
+            android:textColor="#e6f4c1"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="65dp"
+            android:layout_weight="3" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="65dp"
+            android:layout_weight="3" >
+
+            <Button
+                android:id="@+id/activity_setting_account_delete"
+                android:layout_width="55dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="13dp"
+                android:background="@drawable/dialog_btn_bg"
+                android:text="删除"
+                android:textColor="#e6f4c1"
+                android:textSize="15dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_setting_noview"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#d9d6a3"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/activity_setting_noview_title"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:text="sad"
+            android:layout_weight="17"
+            android:layout_marginTop="10dp"
+            android:textColor="#ffffff"
+            android:textSize="20sp" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_setting_textview"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="#e6f4c1"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="65dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/activity_setting_textview_content"
+            android:layout_width="0dp"
+            android:layout_height="65dp"
+            android:layout_weight="17"
+            android:gravity="center_vertical"
+            android:text="sdasd"
+            android:textColor="@color/gray"
+            android:textSize="25sp" >
+        </TextView>
+    </LinearLayout>
+
+</LinearLayout>

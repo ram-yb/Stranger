@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="48.0dip" >
+
+            <TextView
+                android:id="@+id/title_tips"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="15.0dip"
+                android:paddingRight="15.0dip"
+                android:text="请设置服务器地址，该对话框为方便评委们实验而设计，实际发布时由于服务器地址固定，可将此对话框删去即可。。。"
+                android:textColor="@color/white"
+                android:textSize="20.0dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/two_choices_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:padding="15dip" >
+
+                <EditText
+                    android:id="@+id/dialog_http"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:duplicateParentState="true"
+                    android:hint="请输入Openfire服务器地址..."
+                    android:paddingLeft="25.0dip"
+                    android:paddingRight="25.0dip"
+                    android:textColor="@color/gray"
+                    android:textSize="18.0dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:padding="15dip" >
+
+                <EditText
+                    android:id="@+id/dialog_address"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:duplicateParentState="true"
+                    android:hint="请输入HTTP服务器地址..."
+                    android:paddingLeft="25.0dip"
+                    android:paddingRight="25.0dip"
+                    android:textColor="@color/gray"
+                    android:textSize="18.0dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/choice_two_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:padding="15dip" >
+
+                <Button
+                    android:id="@+id/dialog_button"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:duplicateParentState="true"
+                    android:paddingLeft="25.0dip"
+                    android:paddingRight="25.0dip"
+                    android:text="确认"
+                    android:textColor="@color/gray"
+                    android:textSize="18.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

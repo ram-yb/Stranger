@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="default_page_indicator_selected_color">#00b285</color>
+
+    <!-- ContactsAdapter.java -->
+    <color name="red_light">#ffff4444</color>
+    <color name="green_light">#ff99cc00</color>
+    <color name="orange_light">#ffffbb33</color>
+    <color name="blue_light">#ff33b5e5</color>
+    <color name="transparent">#ffffff</color>
+    <color name="myfav1">#98b692</color>
+    <color name="red">#FF0000</color>
+    <color name="green">#00FF00</color>
+    <color name="green_dark">#9CDC6A</color>
+    <color name="blue">#33B5E5</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray">#7c7c7c</color>
+    <color name="gray_white">#ebebeb</color>
+    <color name="gray_light">#887c7c7c</color>
+    <color name="gray_dark">#2e2e2e</color>
+    <color name="yellow">#FFFC00</color>
+    <color name="pink">#FF87EF</color>
+    <color name="orange">#ff6200</color>
+
+</resources>

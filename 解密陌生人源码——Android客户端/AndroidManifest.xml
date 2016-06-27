@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.silence.im"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="10" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name="com.silence.im.IM"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="TtGGWZgk3IZAMfgEDfiBTGYQ" />
+
+        <activity
+            android:name="com.silence.im.ui.LocationActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.silence.im.ui.ChatActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.silence.im.MainActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/test"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.silence.im.ui.ShakeActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <service
+            android:name="com.silence.im.IMService"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":push" >
+        </service>
+
+        <provider
+            android:name="com.silence.im.provider.ContactsProvider"
+            android:authorities="com.silence.im.provider.ContactsProvider" />
+        <provider
+            android:name="com.silence.im.provider.SMSProvider"
+            android:authorities="com.silence.im.provider.SMSProvider" />
+
+        <activity
+            android:name="com.silence.im.ui.WelcomeActivity"
+            android:screenOrientation="portrait"
+             >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.silence.im.ui.UserActivity"
+            android:label="@string/title_activity_user"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.silence.im.ui.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/test"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.silence.im.ui.SignActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/test"
+            android:windowSoftInputMode="adjustPan" >
+            <intent-filter>
+                <action android:name="android.intent.action.GET_CONTENT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.silence.im.ui.AddActivity"
+            android:label="@string/title_activity_add"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+        </service>
+
+        <activity android:name="com.silence.im.ui.PuzzleGame" >
+        </activity>
+        <activity
+            android:name="com.silence.im.ui.AddFriendActivity"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity android:name="com.silence.im.ui.WindowsFullActivity" >
+        </activity>
+        <activity android:name="com.silence.im.ui.ChatImageActivity" >
+        </activity>
+        <activity
+            android:name="com.silence.im.ui.SettingActivity"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity android:name="com.silence.im.ui.DownFileActivity" >
+        </activity>
+        <activity android:name="com.silence.im.ui.AboutActivity" >
+        </activity>
+        <activity
+            android:name="com.silence.im.ui.FindPasswordActivity"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.silence.im.ui.ChangePasswordActivity"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+    </application>
+
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" >
+    </uses-permission>
+    <!-- <uses-permission android:name="android.permission.WRITE_APN_SETTINGS"></uses-permission> -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <!-- SDK1.5需要android.permission.GET_TASKS权限判断本程序是否为当前运行的应用? -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CAMERA" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.RECORD_AUDIO" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+</manifest>

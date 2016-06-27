@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" -->
+<!-- android:layout_width="fill_parent" -->
+<!-- android:layout_height="wrap_content" > -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/activity_chat_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:background="@android:color/transparent"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="true"
+        android:focusable="true"
+        android:listSelector="@android:color/transparent"
+        android:smoothScrollbar="false"
+        android:stackFromBottom="true"
+        android:transcriptMode="normal" />
+
+    <LinearLayout
+        android:id="@+id/activity_chat_send_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="#e6f4c1"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2" >
+
+            <Button
+                android:id="@+id/activity_chat_send_emoj"
+                android:layout_width="35dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/activity_chat_emoticon_btn" />
+
+            <Button
+                android:id="@+id/activity_chat_send_image"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/activity_chat_add_btn" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <EditText
+                android:id="@+id/activity_chat_send_input"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:background="#e6f4c1"
+                android:drawableBottom="@drawable/line"
+                android:ems="10"
+                android:inputType="textMultiLine" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.2" >
+
+            <Button
+                android:id="@+id/activity_chat_send_btn"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/dialog_btn_bg"
+                android:text="发送"
+                android:textColor="#00b285"
+                android:textSize="15dp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/activity_chat_add_voice"
+                android:layout_width="25dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/activity_chat_add_voice" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="fill_parent"
+        android:layout_height="180dp"
+        android:layout_alignParentBottom="true"
+        android:background="#eeeeee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:visibility="gone" >
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout> <!-- </RelativeLayout> -->
